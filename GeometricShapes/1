@@ -1,0 +1,11 @@
+import cv2 
+import numpy as np 
+import time 
+def basic():
+    image = np.zeros((120,120,3), np.uint8)
+    cv2.line(image, (0,99),(99,0), (255,0,0), 2 )
+    cv2.imshow('numpy image', image)
+    cv2.waitKey(5000)
+    cv2.destroyAllWindows()
+
+basic()
